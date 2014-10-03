@@ -1,4 +1,4 @@
-ruby '2.0.0'
+
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -33,6 +33,10 @@ gem 'jbuilder', '~> 1.2'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+group :development do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sqlite3'
 end
 
 # Use ActiveModel has_secure_password
