@@ -1,0 +1,65 @@
+// Place all the styles related to the Main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#c3c3c3));
+	background-image: -moz-linear-gradient(0% 100% 90deg, #c3c3c3, #fff);
+}
+
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+table {
+	padding: 0;
+	margin:0;
+}
+#main_page_logo {
+	h2 {
+		font-size: 33pt;
+		color: #0141ab;
+		font-family: Times New Roman;
+		font-weight: 100;
+		margin: 0;
+
+	}
+	width: 80%;
+	margin: 100px auto 0 auto;
+	text-align: center;
+}
+.div_1px {
+	height: 1px;
+	width: 100%;
+	background-color: #0141ab;
+}
+table.menu {
+	margin-top: 30px;
+	width: 100%;
+	td {
+		width: 34%;
+	}
+	td {	
+	color: #828282;
+	}
+	td.highlighted {
+		color: #0141ab !important;
+	}
+	
+	td.menu_angl { 
+		font-size: 18pt;
+		font-weight: 100;
+	}
+	tr.top_menu {
+		td{
+			span:before {
+				/*content: "• ";*/
+			}
+			border-top: 1px solid #0141ab;
+			border-bottom: 1px solid #0141ab;	
+			padding: 0;
+			margin: 0;
+		}
+	}
+}
