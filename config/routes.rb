@@ -4,6 +4,9 @@ Anya::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'main#index'
+  get 'contacts' => 'main#contacts'
+  get 'about_me' => 'main#about_me'
+  get 'gallery' => 'main#gallery'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

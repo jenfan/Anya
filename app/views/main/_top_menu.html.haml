@@ -1,0 +1,17 @@
+%table.menu2{style:"width:600px;", cellpadding:0, cellspacing:0}
+  %tr.disk
+    %td= home
+    - unless contact? 
+      %td= link_to "контакты", contacts_path
+    - unless gallery? 
+      %td= link_to "галерея", gallery_path
+    - unless about_me? 
+      %td= link_to "об авторе", about_me_path
+  %tr
+    %td.menu_angl= image_tag 'href_home.png', size:'200x160'
+    - unless contact? 
+      %td.menu_angl= image_tag 'href_contacts.png', size:'200x160'
+    - unless gallery? 
+      %td.menu_angl{width:200}= image_tag 'href_gall.png', size:'160x50'
+    - unless about_me? 
+      %td.menu_angl= image_tag 'href_author.png', size:'200x160'

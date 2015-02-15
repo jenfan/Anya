@@ -1,23 +1,21 @@
-#main_page_logo
-	=image_tag 'portf.png', size:'60x40'
-	h2
-		|MARINA
-		br
-		|PEKARSKAYA
-	.div_1px style="margin-top:30px; margin-bottom:-15px;"
-	=image_tag 'main_logo.png', size:'130x130'
-	table.menu cellpadding="0" cellspacing="0"
-		tr.top_menu
-			td
-				span.disk.contact контакты
-			td
-				span.disk.gal галерея
-			td
-				span.disk.author об авторе
-		tr
-			td.menu_angl
-				span.contact Contacts
-			td.menu_angl
-				span.gal Gallery
-			td.menu_angl
-				span.author Author
+#main_page_div
+  =image_tag 'main/portf.png', size:'60x40'
+  h2
+    |MARINA
+    br
+    |PEKARSKAYA
+  .div_1px style="margin-top:30px; margin-bottom:10px;"
+  =image_tag 'main/main_left.jpg', size:'270x130', style:'float:left'
+  =image_tag 'main/main_logo.png', size:'130x130'
+  =image_tag 'main/main_right.jpg', size:'270x130', style:'float:right'
+  table.menu cellpadding="0" cellspacing="0"
+    tr.top_menu.disk
+      td=link_to "контакты", contacts_path
+      td=link_to "галерея", gallery_path
+      td=link_to "об авторе", about_me_path
+    tr.top_menu_img
+      td.menu_angl =image_tag 'href_contacts.png', size:'220x160'
+      td.menu_angl =image_tag 'href_gall.png', size:'150x60'
+      td.menu_angl =image_tag 'href_author.png', size:'220x180'
+css:
+ body {padding-top: 7%;}
